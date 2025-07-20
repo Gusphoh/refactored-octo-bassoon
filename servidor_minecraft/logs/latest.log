@@ -1,0 +1,131 @@
+[05:28:53] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[05:28:53] [main/INFO] [LaunchWrapper]: Using primary tweak class name net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[05:28:53] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLServerTweaker
+[05:28:53] [main/INFO] [FML]: Forge Mod Loader version 14.23.5.2860 for Minecraft 1.12.2 loading
+[05:28:53] [main/INFO] [FML]: Java is OpenJDK 64-Bit Server VM, version 1.8.0_452, running on Linux:amd64:6.8.0-1027-azure, installed at /usr/lib/jvm/java-8-openjdk-amd64/jre
+[05:28:54] [main/INFO] [FML]: Searching /workspaces/refactored-octo-bassoon/servidor_minecraft/./mods for mods
+[05:28:54] [main/INFO] [FML]: Loading tweaker guichaguri.betterfps.tweaker.BetterFpsTweaker from BetterFps-1.4.8.jar
+[05:28:54] [main/WARN] [FML]: Found FMLCorePluginContainsFMLMod marker in Bloodmoon-MC1.12.2-1.5.3.jar. This is not recommended, @Mods should be in a separate jar from the coremod.
+[05:28:54] [main/WARN] [FML]: The coremod lumien.bloodmoon.asm.LoadingPlugin does not have a MCVersion annotation, it may cause issues with this version of Minecraft
+[05:28:54] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[05:28:54] [main/INFO] [LaunchWrapper]: Loading tweak class name guichaguri.betterfps.tweaker.BetterFpsTweaker
+[05:28:54] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[05:28:54] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[05:28:54] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLInjectionAndSortingTweaker
+[05:28:54] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[05:28:56] [main/INFO] [FML]: Found valid fingerprint for Minecraft Forge. Certificate fingerprint e3c3d50c7c986df74c645c0ac54639741c90a557
+[05:28:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[05:28:56] [main/INFO] [LaunchWrapper]: Calling tweak class guichaguri.betterfps.tweaker.BetterFpsTweaker
+[05:28:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.FMLDeobfTweaker
+[05:28:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.relauncher.CoreModManager$FMLPluginWrapper
+[05:28:56] [main/INFO] [LaunchWrapper]: Loading tweak class name net.minecraftforge.fml.common.launcher.TerminalTweaker
+[05:28:56] [main/INFO] [LaunchWrapper]: Calling tweak class net.minecraftforge.fml.common.launcher.TerminalTweaker
+[05:28:56] [main/INFO] [LaunchWrapper]: Launching wrapped minecraft {net.minecraft.server.MinecraftServer}
+[05:28:56] [main/INFO] [BetterFps]: Patching net.minecraft.block.Block... (aow)
+[05:28:57] [main/INFO] [BetterFps]: Patching math utils with "RIVENS_HALF" algorithm
+[05:28:57] [main/INFO] [BetterFps]: Patching net.minecraft.tileentity.TileEntityBeacon... (avh)
+[05:28:58] [main/INFO] [BetterFps]: Patching net.minecraft.block.BlockHopper... (arl)
+[05:28:58] [main/INFO] [BetterFps]: Patching net.minecraft.tileentity.TileEntityHopper... (avw)
+[05:28:59] [main/INFO] [BetterFps]: Patching net.minecraft.server.dedicated.DedicatedServer... (nz)
+[05:28:59] [Server thread/INFO] [net.minecraft.server.dedicated.DedicatedServer]: Starting minecraft server version 1.12.2
+[05:28:59] [Server thread/INFO] [FML]: MinecraftForge v14.23.5.2860 Initialized
+[05:28:59] [Server thread/INFO] [FML]: Starts to replace vanilla recipe ingredients with ore ingredients.
+[05:28:59] [Server thread/INFO] [FML]: Invalid recipe found with multiple oredict ingredients in the same ingredient...
+[05:28:59] [Server thread/INFO] [FML]: Replaced 1227 ore ingredients
+[05:28:59] [Server thread/INFO] [FML]: Searching /workspaces/refactored-octo-bassoon/servidor_minecraft/./mods for mods
+[05:29:00] [Server thread/ERROR] [FML]: Unable to read a class file correctly
+java.lang.IllegalArgumentException: null
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) [ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98) [FMLServerHandler.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [FMLCommonHandler.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_452]
+[05:29:00] [Server thread/ERROR] [FML]: There was a problem reading the entry com/ferreusveritas/dynamictrees/DynamicTrees$AxeDamage.class in the jar ./mods/DynamicTrees-1.20.1-1.4.5.jar - probably a corrupt zip
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98) [FMLServerHandler.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [FMLCommonHandler.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_452]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 12 more
+[05:29:00] [Server thread/WARN] [FML]: Zip file DynamicTrees-1.20.1-1.4.5.jar failed to read properly, it will be ignored
+net.minecraftforge.fml.common.LoaderException: java.lang.IllegalArgumentException
+
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:63) ~[ASMModParser.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.findClassesASM(JarDiscoverer.java:102) ~[JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.JarDiscoverer.discover(JarDiscoverer.java:77) [JarDiscoverer.class:?]
+	at net.minecraftforge.fml.common.discovery.ContainerType.findMods(ContainerType.java:47) [ContainerType.class:?]
+	at net.minecraftforge.fml.common.discovery.ModCandidate.explore(ModCandidate.java:74) [ModCandidate.class:?]
+	at net.minecraftforge.fml.common.discovery.ModDiscoverer.identifyMods(ModDiscoverer.java:93) [ModDiscoverer.class:?]
+	at net.minecraftforge.fml.common.Loader.identifyMods(Loader.java:427) [Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:568) [Loader.class:?]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98) [FMLServerHandler.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) [FMLCommonHandler.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125) [nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_452]
+Caused by: java.lang.IllegalArgumentException
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:185) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:168) ~[asm-debug-all-5.2.jar:5.2]
+	at org.objectweb.asm.ClassReader.<init>(ClassReader.java:439) ~[asm-debug-all-5.2.jar:5.2]
+	at net.minecraftforge.fml.common.discovery.asm.ASMModParser.<init>(ASMModParser.java:57) ~[ASMModParser.class:?]
+	... 12 more
+[05:29:00] [Server thread/INFO] [FML]: Mod geckolib3 is missing the required element 'name'. Substituting geckolib3
+[05:29:00] [Server thread/INFO] [FML]: Disabling mod mobdismemberment it is client side only.
+[05:29:00] [Server thread/WARN] [FML]: Mod mobends is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.2.1
+[05:29:00] [Server thread/WARN] [FML]: Mod spiderstpo is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 1.0.3
+[05:29:01] [Server thread/WARN] [FML]: Mod waystones is missing the required element 'version' and a version.properties file could not be found. Falling back to metadata version 4.1.0
+[05:29:01] [Server thread/INFO] [FML]: Forge Mod Loader has identified 16 mods to load
+[05:29:01] [Server thread/WARN] [FML]: Missing English translation for FML: assets/fml/lang/en_us.lang
+[05:29:01] [Server thread/WARN] [FML]: Missing English translation for bettercaves: assets/bettercaves/lang/en_us.lang
+[05:29:01] [Server thread/WARN] [FML]: Missing English translation for geckolib3: assets/geckolib3/lang/en_us.lang
+[05:29:01] [Server thread/WARN] [FML]: Missing English translation for spiderstpo: assets/spiderstpo/lang/en_us.lang
+[05:29:01] [Server thread/FATAL] [FML]: net.minecraftforge.fml.common.MissingModsException: Mod playerrevive (Player Revive) requires [creativecore]
+[05:29:01] [Server thread/FATAL] [FML]: net.minecraftforge.fml.common.MissingModsException: Mod zombieawareness (Zombie Awareness) requires [coroutil]
+[05:29:01] [Server thread/ERROR] [net.minecraft.server.MinecraftServer]: Encountered an unexpected exception
+net.minecraftforge.fml.common.MultipleModsErrored: 
+Missing Mods:
+	unknown : need any: have missing
+
+Missing Mods:
+	unknown : need any: have missing
+
+
+	at net.minecraftforge.fml.common.Loader.sortModList(Loader.java:300) ~[Loader.class:?]
+	at net.minecraftforge.fml.common.Loader.loadMods(Loader.java:572) ~[Loader.class:?]
+	at net.minecraftforge.fml.server.FMLServerHandler.beginServerLoading(FMLServerHandler.java:98) ~[FMLServerHandler.class:?]
+	at net.minecraftforge.fml.common.FMLCommonHandler.onServerStart(FMLCommonHandler.java:333) ~[FMLCommonHandler.class:?]
+	at net.minecraft.server.dedicated.DedicatedServer.func_71197_b(DedicatedServer.java:125) ~[nz.class:?]
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:486) [MinecraftServer.class:?]
+	at java.lang.Thread.run(Thread.java:750) [?:1.8.0_452]
+[05:29:01] [Server thread/ERROR] [net.minecraft.server.MinecraftServer]: This crash report has been saved to: /workspaces/refactored-octo-bassoon/servidor_minecraft/./crash-reports/crash-2025-07-20_05.29.01-server.txt
+[05:29:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[05:29:01] [Server thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
+[05:29:01] [Server thread/INFO] [FML]: The state engine was in incorrect state CONSTRUCTING and forced into state SERVER_STOPPED. Errors may have been discarded.
+[05:29:01] [Server Shutdown Thread/INFO] [net.minecraft.server.MinecraftServer]: Stopping server
+[05:29:01] [Server Shutdown Thread/INFO] [net.minecraft.server.MinecraftServer]: Saving worlds
